@@ -16,11 +16,18 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-    const response = await axios.get(url);
-    console.log("Post req: ", response.data.joke);
-    res.render("index.ejs", {
-        joke: response.data.joke,
-    });
+	try {
+		
+    		 const response = await axios.get(url);
+   		 console.log("Post req: ", response.data.joke);
+   		 res.render("index.ejs", {
+       			 joke: response.data.joke,
+   		 });
+	} catch(error) {
+		console.error(error.response.data);
+		res.render("index.ejs", {joke: "Error in fetching joke from the server"});
+		res.status("404 not found");
+	}
 });
 
 app.listen(port, () => {
