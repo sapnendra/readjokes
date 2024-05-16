@@ -6,7 +6,11 @@
 }
 
 body{
-    background-color: #fab22e;
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .wrapper{
