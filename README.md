@@ -15,12 +15,12 @@ To get started with Read Jokes, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/read-jokes.git
+   git clone https://github.com/sapnendra/readjokes.git
    ```
 
 2. **Install dependencies**:
    ```bash
-   cd read-jokes
+   cd readjokes
    npm install
    ```
 
@@ -32,7 +32,7 @@ To get started with Read Jokes, follow these steps:
 
 4. **Start the server**:
    ```bash
-   npm start
+   node server.js
    ```
 
 5. **Visit the website**:
@@ -51,7 +51,3 @@ Contributions are welcome! If you'd like to contribute to Read Jokes, please fol
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize the README.md file further to include any additional information or instructions specific to your project!
